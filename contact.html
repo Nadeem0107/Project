@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order Food | Al-Marhaba Family Restaurant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding-top: 40px;
+    }
+
+    .order-form {
+      background: white;
+      max-width: 500px;
+      width: 90%;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #f85f00;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      resize: vertical;
+    }
+
+    textarea {
+      min-height: 100px;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background-color: #f85f00;
+      color: white;
+      border: none;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d44c00;
+    }
+
+    .confirmation {
+      margin-top: 20px;
+      padding: 10px;
+      background: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      border-radius: 5px;
+      display: none;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="order-form" id="orderForm">
+    <h2>Place Your Order</h2>
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Your phone number" required pattern="[0-9]{10,15}" title="Enter a valid phone number" />
+
+    <label for="address">Delivery Address</label>
+    <textarea id="address" name="address" placeholder="Your delivery address" required></textarea>
+
+    <label for="orderDetails">Order Details</label>
+    <textarea id="orderDetails" name="orderDetails" placeholder="Write the dishes you want to order" required></textarea>
+
+    <button type="submit">Submit Order</button>
+
+    <div class="confirmation" id="confirmationMessage">
+      Thank you! Your order has been received. We will contact you shortly.
+    </div>
+  </form>
+
+  <script>
+    const form = document.getElementById('orderForm');
+    const confirmation = document.getElementById('confirmationMessage');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Here you could add actual form submission logic (API call, email etc)
+      // For now, just show confirmation and reset form.
+
+      confirmation.style.display = 'block';
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>

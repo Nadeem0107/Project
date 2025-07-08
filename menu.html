@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu | Al-Marhaba Family Restaurant</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #fffaf0;
+      color: #333;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1603052875673-60f06c88c203?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background-color: rgba(0,0,0,0.4);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    nav {
+      background: #f85f00;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      background: #d14700;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #b33a00;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #f85f00;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #f8b500;
+      padding-bottom: 5px;
+    }
+
+    .menu-category {
+      margin-bottom: 2.5rem;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed #ccc;
+      padding: 0.5rem 0;
+    }
+
+    .menu-item span {
+      font-weight: bold;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Delicious Menu</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="menu-category">
+    <h2>Rice Dishes</h2>
+    <div class="menu-item"><p>Chicken Biryani</p><span>₹220</span></div>
+    <div class="menu-item"><p>Mutton Biryani</p><span>₹260</span></div>
+    <div class="menu-item"><p>Beef Biryani</p><span>₹240</span></div>
+    <div class="menu-item"><p>Chicken Mandi</p><span>₹230</span></div>
+    <div class="menu-item"><p>Mutton Mandi</p><span>₹270</span></div>
+    <div class="menu-item"><p>Veg Pulao</p><span>₹160</span></div>
+    <div class="menu-item"><p>Egg Fried Rice</p><span>₹140</span></div>
+    <div class="menu-item"><p>Chicken Fried Rice</p><span>₹180</span></div>
+    <div class="menu-item"><p>Fish Biryani</p><span>₹250</span></div>
+    <div class="menu-item"><p>Jeera Rice</p><span>₹100</span></div>
+  </section>
+
+  <section class="menu-category">
+    <h2>Curries</h2>
+    <div class="menu-item"><p>Butter Chicken</p><span>₹210</span></div>
+    <div class="menu-item"><p>Chicken Curry</p><span>₹180</span></div>
+    <div class="menu-item"><p>Mutton Rogan Josh</p><span>₹260</span></div>
+    <div class="menu-item"><p>Beef Curry</p><span>₹220</span></div>
+    <div class="menu-item"><p>Fish Masala</p><span>₹200</span></div>
+    <div class="menu-item"><p>Prawn Curry</p><span>₹230</span></div>
+    <div class="menu-item"><p>Egg Masala</p><span>₹150</span></div>
+    <div class="menu-item"><p>Paneer Butter Masala</p><span>₹180</span></div>
+  </section>
+
+  <section class="menu-category">
+    <h2>Side Dishes</h2>
+    <div class="menu-item"><p>Chicken Shawarma</p><span>₹100</span></div>
+    <div class="menu-item"><p>Beef Cutlet (2 pcs)</p><span>₹80</span></div>
+    <div class="menu-item"><p>Egg Omelette</p><span>₹60</span></div>
+    <div class="menu-item"><p>French Fries</p><span>₹90</span></div>
+    <div class="menu-item"><p>Green Salad</p><span>₹70</span></div>
+    <div class="menu-item"><p>Tandoori Chicken (Half)</p><span>₹180</span></div>
+    <div class="menu-item"><p>Chicken Lollipop</p><span>₹150</span></div>
+    <div class="menu-item"><p>Garlic Naan</p><span>₹40</span></div>
+  </section>
+
+  <section class="menu-category">
+    <h2>Juices</h2>
+    <div class="menu-item"><p>Fresh Lime</p><span>₹40</span></div>
+    <div class="menu-item"><p>Watermelon Juice</p><span>₹60</span></div>
+    <div class="menu-item"><p>Mango Shake</p><span>₹80</span></div>
+    <div class="menu-item"><p>Orange Juice</p><span>₹70</span></div>
+    <div class="menu-item"><p>Pineapple Juice</p><span>₹70</span></div>
+  </section>
+
+  <section class="menu-category">
+    <h2>Ice Cream</h2>
+    <div class="menu-item"><p>Vanilla Scoop</p><span>₹40</span></div>
+    <div class="menu-item"><p>Chocolate Scoop</p><span>₹50</span></div>
+    <div class="menu-item"><p>Strawberry Scoop</p><span>₹50</span></div>
+    <div class="menu-item"><p>Butterscotch Cup</p><span>₹60</span></div>
+    <div class="menu-item"><p>Falooda</p><span>₹90</span></div>
+  </section>
+
+  <footer>
+    &copy; 2025 Al-Marhaba Family Restaurant. All rights reserved.
+  </footer>
+
+</body>
+</html>
